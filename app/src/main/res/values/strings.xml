@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Lifecycle</string>
+
+    <string name="hello_blank_fragment">Hello Lifecycle Fragment</string>
+</resources>
