@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ViewModel</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="save">save</string>
+    <string name="warning_info">For use the app you have to avoid access to Location and turn on your GPS</string>
+    <string name="turn_on_gps">turn on gps</string>
+    <string name="avoid_location">avoid use location</string>
+    <string name="chose_point">please, set point</string>
+</resources>
