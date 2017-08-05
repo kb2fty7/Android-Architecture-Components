@@ -66,7 +66,7 @@ public class DetectorViewModel extends AndroidViewModel {
 
     private void initVariables() {
         point = repository.getPoint();
-        if (point.latitude < 0 && point.longitude < 0)
+        if (point.latitude == 0 && point.longitude == 0)
             point = null;
         radius = repository.getRadius();
         networkName = repository.getNetworkName();

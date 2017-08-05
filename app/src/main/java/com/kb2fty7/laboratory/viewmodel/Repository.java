@@ -11,7 +11,7 @@ import com.google.android.gms.maps.model.LatLng;
 
 public class Repository implements IRepository {
     private static final int DEFAULT_RADIUS = 300;
-    private static final String DEFAULT_POINT = "-1";
+    private static final String DEFAULT_POINT = "0";
     private static final String SETTINGS = "settings_sp";
     private static final String RADIUS = "radius_sp";
     private static final String POINT_LONGITUDE = "point_sp_lng";
@@ -37,6 +37,7 @@ public class Repository implements IRepository {
 
     @Override
     public LatLng getPoint() {
+
         double longitude = Double.parseDouble(sharedPref.getString(POINT_LONGITUDE, DEFAULT_POINT));
         double latitude = Double.parseDouble(sharedPref.getString(POINT_LATITUDE, DEFAULT_POINT));
         return new LatLng(latitude, longitude);
